@@ -1,0 +1,109 @@
+body::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+/*Properties for navbar and the positioning of items it contains*/
+.navbarContainer {
+    background-color: #132D48;
+    display: flex;
+    color: #FFFFFF;
+    font-size: 17px;
+    height: 60px;
+    /*Rounded edges*/
+    border-radius: 25px;
+    /*Horizontal orientation*/
+    justify-content: space-evenly;
+    /*Vertical orientation*/
+    align-items:center;
+    box-shadow: 0 4px 2px -2px gray;
+}
+
+/*Ingores blue color of all a elements inside the navbar*/
+.navbarContainer a{
+    color: inherit;
+}
+
+.navbarContainer a:hover{
+    background-color: #E96C57;
+}
+
+.logo{
+    width: 55px;
+    height: 55px;
+}
+
+/* Dropdown Button */
+.dropBTN {
+    background-color: inherit;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdownContent {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdownContent a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdownContent a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdownContent {display: block; background-color: #FFFFFF}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropBTN {background-color: #3e8e41;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropBTN {
+    background-color: #E96C57;
+}
+
+/*Remove border and set height to fit content for use*/
+section{
+    height: 200px;
+    margin-top: 50px;
+    margin-left: 15%;
+    margin-right: 15%;
+    border: 5px solid black ;
+}
+
+.footerContainer{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5%;
+    margin-left: 20%;
+    margin-right: 20%;
+    border-top: 5px solid black;
+}
+
+.footerContainer img{
+    margin-top:1%;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
